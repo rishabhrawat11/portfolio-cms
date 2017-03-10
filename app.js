@@ -12,7 +12,7 @@ var localStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var multer = require('multer');
-mongoose.connect('mongodb://localhost/portfolio');
+mongoose.connect('mongodb://<root>:<root>@ds127300.mlab.com:27300/portfolio');
 
 var db = mongoose.connection;
 
