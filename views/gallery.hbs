@@ -1,0 +1,21 @@
+<style>
+    .upload-btn{
+        text-align: center;
+    }
+</style>
+<div class="upload-btn" >
+    <form method="POST" enctype="multipart/form-data" action="/gallery">
+        <input type="file" name="portimages" multiple><br>
+        <input type="submit" name="submit" value="submit">
+    </form>
+</div>
+
+<div>
+    <div >
+        <ul>
+            {{#portfolio_img}}
+            <li>hello</li>
+            {{/portfolio_img}}
+        </ul>
+    </div>
+</div>
